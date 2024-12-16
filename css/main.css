@@ -1,0 +1,225 @@
+
+.mitr-extralight {
+  font-family: "Mitr", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.mitr-light {
+  font-family: "Mitr", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.mitr-regular {
+  font-family: "Mitr", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.mitr-medium {
+  font-family: "Mitr", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.mitr-semibold {
+  font-family: "Mitr", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.mitr-bold {
+  font-family: "Mitr", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.sarabun-thin {
+  font-family: "Sarabun", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.sarabun-extralight {
+  font-family: "Sarabun", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.sarabun-light {
+  font-family: "Sarabun", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.sarabun-regular {
+  font-family: "Sarabun", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.sarabun-medium {
+  font-family: "Sarabun", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.sarabun-semibold {
+  font-family: "Sarabun", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.sarabun-bold {
+  font-family: "Sarabun", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.sarabun-extrabold {
+  font-family: "Sarabun", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.sarabun-thin-italic {
+  font-family: "Sarabun", sans-serif;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.sarabun-extralight-italic {
+  font-family: "Sarabun", sans-serif;
+  font-weight: 200;
+  font-style: italic;
+}
+
+.sarabun-light-italic {
+  font-family: "Sarabun", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.sarabun-regular-italic {
+  font-family: "Sarabun", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.sarabun-medium-italic {
+  font-family: "Sarabun", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.sarabun-semibold-italic {
+  font-family: "Sarabun", sans-serif;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.sarabun-bold-italic {
+  font-family: "Sarabun", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.sarabun-extrabold-italic {
+  font-family: "Sarabun", sans-serif;
+  font-weight: 800;
+  font-style: italic;
+}
+
+body {
+  font-family: "Sarabun", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+
+/*TEXT Animation*/
+
+.ml10 {
+  position: relative;
+  font-weight: 900;
+  font-size: 4em;
+}
+
+.ml10 .text-wrapper {
+  position: relative;
+  display: inline-block;
+  padding-top: 0.2em;
+  padding-right: 0.05em;
+  padding-bottom: 0.1em;
+  overflow: hidden;
+}
+
+.ml10 .letter {
+  display: inline-block;
+  line-height: 1em;
+  transform-origin: 0 0;
+}
+
+
+
+/*Logo Animate*/
+
+
+.wrapper {
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+}
+
+.main-div {
+  width: 100px;
+  height: 71px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: space-between;
+  transform: perspective(100px) rotateY(-42deg);
+  -webkit-transform: perspective(100px) rotateY(-42deg);
+  -moz-transform: perspective(100px) rotateY(-42deg);
+  -ms-transform: perspective(100px) rotateY(-42deg);
+  -o-transform: perspective(100px) rotateY(-42deg);
+  animation-name: rotate-windows;
+  animation-iteration-count: infinite;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+}
+
+.main-div div {
+  background-color: #00adef;
+  width: 47.5%;
+  height: 47%;
+}
+
+@keyframes rotate-windows {
+  0% {
+    transform: perspective(100px) rotateY(-42deg);
+    -webkit-transform: perspective(100px) rotateY(-42deg);
+    -moz-transform: perspective(100px) rotateY(-42deg);
+    -ms-transform: perspective(100px) rotateY(-42deg);
+    -o-transform: perspective(100px) rotateY(-42deg);
+  }
+  50% {
+    transform: perspective(100px) rotateY(0deg);
+    -webkit-transform: perspective(100px) rotateY(0deg);
+    -moz-transform: perspective(100px) rotateY(0deg);
+    -ms-transform: perspective(100px) rotateY(0deg);
+    -o-transform: perspective(100px) rotateY(0deg);
+  }
+  100% {
+    transform: perspective(100px) rotateY(-42deg);
+    -webkit-transform: perspective(100px) rotateY(-42deg);
+    -moz-transform: perspective(100px) rotateY(-42deg);
+    -ms-transform: perspective(100px) rotateY(-42deg);
+    -o-transform: perspective(100px) rotateY(-42deg);
+  }
+}
+
+
