@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="th">
+  <head>
+    
+    <meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1"> 
+        
+    <title>Download Line PC ภาษาไทย ดาวน์โหลดไลน์ PC</title>
+            
+    <meta name="description" content="Download Line PC ภาษาไทย ดาวน์โหลดไลน์ PC สำหรับ Windows"> 
+
+    <meta name="keywords" content="download line pc,download line,line pc,ดาวน์โหลดไลน์,โหลดไลน์,ดาวน์โหลดไลน์ PC,โหลดไลน์ PC,ดาวน์โหลด line PC,โหลด line PC">
+  
+    <link rel="stylesheet" href="css\main.css">
+
+    <link rel="stylesheet" href="bootstrap\css\bootstrap.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sarabun:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mitr:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+
+    
+    <!--CSS from Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+
+  </head>
+  <body> 
+
+    <div w3-include-html="header.html"></div> 
+
+    <div class="container mt-3">
+      <div class="wrapper">
+        <div class="main-div">
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </div>
+      <h1 class="ml10">
+        <span class="text-wrapper text-primary"><span class="letters">LINE PC ภาษาไทย สำหรับ Windows 11</span></span>
+      </h1>      
+    </div> 
+    
+    <div class="container d-flex justify-content-center pt-2"><h1 class="mitr-bold">ดาวน์โหลด Line PC ภาษาไทย</h1></div>
+
+    <div class="container d-flex justify-content-center"><h3>ดาวน์โหลดไลน์ PC รุ่นใหม่ล่าสุด</h3></div>
+
+    <div w3-include-html="main_content.html"></div>
+
+    <div w3-include-html="main_content_2.html"></div>
+
+    <div w3-include-html="footer.html"></div>
+
+
+  <!--Text Animate-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    
+    <script>
+   var textWrapper = document.querySelector('.ml10 .letters');
+   textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+   
+   anime.timeline({loop: true})
+   .add({
+    targets: '.ml10 .letter',
+    rotateY: [-90, 0],
+    duration: 1300,
+    delay: (el, i) => 45 * i
+   }).add({
+    targets: '.ml10',
+    opacity: 0,
+    duration: 1000,
+    easing: "easeOutExpo",
+    delay: 1000
+   });
+    </script>
+    <!--Text Animate-->
+
+    <!--Includ HTML File-->
+    <script>
+        function includeHTML() {
+          var z, i, elmnt, file, xhttp;
+          /* Loop through a collection of all HTML elements: */
+          z = document.getElementsByTagName("*");
+          for (i = 0; i < z.length; i++) {
+            elmnt = z[i];
+            /*search for elements with a certain atrribute:*/
+            file = elmnt.getAttribute("w3-include-html");
+            if (file) {
+              /* Make an HTTP request using the attribute value as the file name: */
+              xhttp = new XMLHttpRequest();
+              xhttp.onreadystatechange = function() {
+                if (this.readyState == 4) {
+                  if (this.status == 200) {elmnt.innerHTML = this.responseText;}
+                  if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
+                  /* Remove the attribute, and call this function once more: */
+                  elmnt.removeAttribute("w3-include-html");
+                  includeHTML();
+                }
+              }
+              xhttp.open("GET", file, true);
+              xhttp.send();
+              /* Exit the function: */
+              return;
+            }
+          }
+        }
+        </script>
+    <!--Includ HTML File-->
+
+
+    <script>
+    includeHTML();
+    </script> 
+    
+
+    <!--CDN from Bootstrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+   
+  </body>
+</html>
